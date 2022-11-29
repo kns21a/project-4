@@ -1,7 +1,7 @@
 
 let img;
 function preload() {
-  img = loadImage('libraries/untitled 474.png');
+  img = loadImage('libraries/Note.png');
 }
 
 function setup() {
