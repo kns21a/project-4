@@ -1,4 +1,5 @@
 
+
 //let img;
 //let wind;
 //let ring;
@@ -43,21 +44,21 @@ function rectButton(x,y,w,h, callback){
 }
 
 function buttonHit1(callbackData){
-ellipse(100, 100, 100, 100)
+this.sceneManager.showScene(Computer);
 	}
  
   function buttonHit2(callbackData){
-    ellipse(100, 100, 100, 100)
+    this.sceneManager.showScene(Note);
       }
 
       function buttonHit3(callbackData){
-        ellipse(100, 100, 100, 100)
+        this.sceneManager.showScene(Window);
           }
 
           function buttonHit4(callbackData){
-            ellipse(100, 100, 100, 100)
+            this.sceneManager.showScene(Phone);
               }
 
               function buttonHit5(callbackData){
-                ellipse(100, 100, 100, 100)
+                this.sceneManager.showScene(Door);
                   }
