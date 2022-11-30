@@ -10,9 +10,9 @@ function setup() {
   createCanvas(1319, 695)
   image(img, 0, 0);
   ring.loop();
-  ring.setVolume(0.3);
+  ring.setVolume(0.1);
   parents.loop();
-  parents.setVolume(0.1);
+  parents.setVolume(0.05);
   
 }
 

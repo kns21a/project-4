@@ -10,7 +10,7 @@ function preload() {
 function setup() {
   createCanvas(1319, 695)
   image(img, 0, 0);
-  parents.setVolume(0.2);
+  parents.setVolume(0.05);
   parents.loop();
 }
 
@@ -23,7 +23,7 @@ function draw() {
    }
   
    function mousePressed(){
-    rectButton(4,398,109,79, buttonHit1) //run our check for the button below
+    rectButton(4,398,109,79, buttonHit) //run our check for the button below
     
   }
   
@@ -37,7 +37,7 @@ function draw() {
     }
   }
   
-  function buttonHit1(callbackData){
+  function buttonHit(callbackData){
   this.sceneManager.showScene(bedroom);
     }
    
