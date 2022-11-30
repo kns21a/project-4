@@ -38,7 +38,12 @@ function draw() {
   rect(863,0,52,35); // Tab 14
   rect(920,0,52,35); // Tab 15
   rect(979,0,52,35); // Tab 16
-
+  
+  rect(0, 100, 1319, 100); // button to close video
+  rect(0, 200, 1319, 100); // button to close video
+  rect(0, 300, 1319, 100); // button to close video
+  rect(0, 400, 1319, 100); // button to close video
+  rect(0, 500, 1319, 100); // button to close video
 
 }
   
@@ -60,6 +65,12 @@ function draw() {
     rectButton(863,0,52,35, buttonHit14); // Tab 14
     rectButton(920,0,52,35, buttonHit15); // Tab 15
     rectButton(979,0,52,35, buttonHit16); // Tab 16
+
+    rectButton(0, 100, 1319, 100, buttonHit13); // button to close video
+    rectButton(0, 200, 1319, 100, buttonHit17); // button to close video
+    rectButton(0, 300, 1319, 100, buttonHit18); // button to close video
+    rectButton(0, 400, 1319, 100, buttonHit19); // button to close video
+    rectButton(0, 500, 1319, 100, buttonHit20); // button to close video
   }
   
   function rectButton(x,y,w,h, callback){
@@ -153,7 +164,15 @@ function draw() {
         vid5.play();
         vid5.volume(0.2);
         window.alert("Video is loading, hit 'OK' to continue")
-
       }
    
-
+      function buttonHit13(callbackData){
+        vid5.remove(); }
+      function buttonHit17(callbackData){
+        vid1.remove();}
+      function buttonHit18(callbackData){
+        vid2.remove();}
+      function buttonHit19(callbackData){
+        vid3.remove();}
+      function buttonHit20(callbackData){
+        vid4.remove();}
