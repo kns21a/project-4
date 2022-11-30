@@ -23,7 +23,6 @@ rect(4,398,109,79); // computer button
 rect(563, 462, 65, 26); // note button
 rect(632, 263, 190, 150); // window button
 rect(966, 482, 37, 12); // phone button
-rect(1105, 285, 125, 358); // door button
  }
 
  function mousePressed(){
@@ -31,7 +30,6 @@ rect(1105, 285, 125, 358); // door button
   rectButton(563, 462, 65, 26, buttonHit2)
   rectButton(632, 263, 190, 150, buttonHit3)
   rectButton(966, 482, 37, 12, buttonHit4)
-  rectButton(1105, 285, 125, 358, buttonHit5)
 }
 
 function rectButton(x,y,w,h, callback){
@@ -59,7 +57,3 @@ this.sceneManager.showScene(Computer);
           function buttonHit4(callbackData){
             this.sceneManager.showScene(Phone);
               }
-
-              function buttonHit5(callbackData){
-                this.sceneManager.showScene(Door);
-                  }
