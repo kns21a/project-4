@@ -1,7 +1,7 @@
 
 let img;
 function preload() {
-  img = loadImage('libraries/Computer.png');
+  img = loadImage('libraries/computer.png');
 }
 
 function setup() {
@@ -67,7 +67,7 @@ function draw() {
   }
   
   function buttonHit(callbackData){
-  this.sceneManager.showScene(Bedroom);
+  this.sceneManager.showScene(bedroom);
   }
   function buttonHit1(callbackData){ 
 

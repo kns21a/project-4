@@ -1,12 +1,26 @@
 
 let img;
+let wind;
+let parents;
+let ring;
+
 function preload() {
-  img = loadImage('libraries/Window.png');
+  img = loadImage('libraries/window.png');
+  wind = loadSound('libraries/audio&video/wind.mp3');
+  argument = loadSound('libraries/audio&video/parents.mp3');
+  ring = loadSound('libraries/audio&video/phone-ring.mp3')
 }
 
 function setup() {
   image(img, 0, 0);
+  wind.setVolume(0.3)
+  wind.loop();
+  parents.setVolume(0.1)
+  parents.loop()
+  ring.setVolume(0.2)
+  ring.loop()
 }
+
 
 function draw() {
   cursor('grab');
@@ -33,9 +47,9 @@ function draw() {
   }
   
   function buttonHit1(callbackData){
-  this.sceneManager.showScene(Bedroom);
+  this.sceneManager.showScene(bedroom);
     }
 
     function buttonHit2(callbackData){
-      this.sceneManager.showScene(Bedroom);
+      this.sceneManager.showScene(bedroom);
         }

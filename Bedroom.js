@@ -1,18 +1,22 @@
 
-
-//let img;
-//let wind;
-//let ring;
+let img;
+let ring;
+let parents;
 
 function preload() {
-  img = loadImage('libraries/Bedroom.png');
-  //wind= loadSound('Wind.wav');
+  img = loadImage('libraries/bedroom.png');
+  ring = loadSound('libraries/audio&video/phone-ring.mp3')
+  parents = loadSound('libraries/audio&video/parents.mp3')
 }
 
 function setup() {
   createCanvas(1319, 695)
   image(img, 0, 0);
-  //wind.loop();
+  ring.loop();
+  ring.setVolume(0.3);
+  parents.loop();
+  parents.setVolume(0.1);
+  
 }
 
 function draw() {

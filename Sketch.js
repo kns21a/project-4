@@ -1,12 +1,12 @@
 let mgr;
 
-function setup() {
-  createCanvas(1319, 695)
- mgr = new ScreenManager();
- mgr.wire();
- mgr.showScene(Bedroom);
+function setup(){
+  createCanvas(1319,695);
+  mgr = new SceneManager();
+  mgr.wire();
+  mgr.showScene(bedroom)
 }
-
-function draw() {
-  mgr.draw()
+ 
+function draw(){
+  mgr.draw();
 }
