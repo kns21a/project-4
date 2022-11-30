@@ -13,15 +13,15 @@ function draw() {
 
   cursor('grab');
   noFill()
-  Stroke(255, 0)
-  rect(4,398,109,79); // computer button
-  rect(563, 462, 65, 26); // note button
+ // Stroke(255, 0)
+  rect(0,0,380,695); // left background button
+  rect(930, 0, 380, 695); // right background button
  
    }
   
    function mousePressed(){
-    rectButton(4,398,109,79, buttonHit1) //run our check for the button below
-    rectButton(4,398,109,79, buttonHit2) //run our check for the button below
+    rectButton(0,0,380,695, buttonHit1) //run our check for the button below
+    rectButton(930, 0, 380, 695, buttonHit2) //run our check for the button below
   }
   
   function rectButton(x,y,w,h, callback){
