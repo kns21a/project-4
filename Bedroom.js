@@ -16,6 +16,7 @@ function setup() {
 }
 
 function draw() {
+cursor('grab');
 noFill()
 Stroke(255, 0)
 rect(4,398,109,79); // computer button
