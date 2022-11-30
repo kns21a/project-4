@@ -1,12 +1,17 @@
 
 let img;
+let parents;
+
 function preload() {
-  img = loadImage('libraries/Phone.png');
+  img = loadImage('libraries/phone.png');
+  parents = loadSound('libraries/audio&video/parents.mp3')
 }
 
 function setup() {
   createCanvas(1319, 695)
   image(img, 0, 0);
+  parents.setVolume(0.2);
+  parents.loop();
 }
 
 function draw() {
@@ -33,6 +38,6 @@ function draw() {
   }
   
   function buttonHit1(callbackData){
-  this.sceneManager.showScene(Bedroom);
+  this.sceneManager.showScene(bedroom);
     }
    
