@@ -6,6 +6,7 @@ function preload() {
   parents = loadSound('libraries/audio&video/parents.mp3')
 }
 function setup() {
+  createCanvas(1319,695)
   image(img, 0, 0);
   parents.setVolume(0.05);
   parents.loop();

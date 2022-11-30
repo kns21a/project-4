@@ -11,6 +11,7 @@ img = loadImage('libraries/computer.png');
 }
 
 function setup() {
+  createCanvas(1319,695)
   image(img, 0, 0);
   
 }
