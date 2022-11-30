@@ -1,33 +1,29 @@
+function phone(){
 
 let img;
 let parents;
-
-function preload() {
+this.preload = function() {
   img = loadImage('libraries/phone.png');
   parents = loadSound('libraries/audio&video/parents.mp3')
 }
-
-function setup() {
-  createCanvas(1319, 695)
+this.setup = function() {
   image(img, 0, 0);
   parents.setVolume(0.05);
   parents.loop();
 }
 
-function draw() {
+this.draw = function() {
   cursor('grab');
   noFill()
   Stroke(255, 0)
   rect(612,632,40,40); // home button on phone
  
    }
-  
-   function mousePressed(){
+this.mousePressed = function(){
     rectButton(4,398,109,79, buttonHit) //run our check for the button below
-    
   }
-  
-  function rectButton(x,y,w,h, callback){
+
+  this.rectButton = function(x,y,w,h, callback){
     var hit = false;
   
     hit = collidePointRect(mouseX,mouseY,x,y,w,h); //see if the mouse is in the rect
@@ -37,7 +33,7 @@ function draw() {
     }
   }
   
-  function buttonHit(callbackData){
+this.buttonHit = function(callbackData){
   this.sceneManager.showScene(bedroom);
     }
-   
+  }

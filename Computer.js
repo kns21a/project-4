@@ -1,4 +1,4 @@
-
+function computer(){
 let img;
 
 let vid1;
@@ -7,17 +7,17 @@ let vid3;
 let vid4;
 let vid5;
 
-function preload() {
+this.preload = function() {
   img = loadImage('libraries/computer.png');
 }
 
-function setup() {
+this.setup = function() {
   createCanvas(1319, 695)
   image(img, 0, 0);
   
 }
 
-function draw() {
+this.draw = function() {
   noFill()
   Stroke(255, 0)
   rect(1235,0,50,35); // browser x 
@@ -47,7 +47,7 @@ function draw() {
 
 }
   
-   function mousePressed(){
+this.mousePressed = function(){
     rectButton(1235,0,50,35, buttonHit) // browser x button
 
     rectButton(110,0,52,35, buttonHit1); // Tab 1
@@ -73,7 +73,7 @@ function draw() {
     rectButton(0, 500, 1319, 100, buttonHit20); // button to close video
   }
   
-  function rectButton(x,y,w,h, callback){
+this.rectButton = function(x,y,w,h, callback){
     var hit = false;
   
     hit = collidePointRect(mouseX,mouseY,x,y,w,h); //see if the mouse is in the rect
@@ -83,20 +83,20 @@ function draw() {
     }
   }
   
-  function buttonHit(callbackData){
+this.buttonHit = function(callbackData){
   this.sceneManager.showScene(bedroom);
   }
-  function buttonHit1(callbackData){ 
+this.buttonHit1 = function(callbackData){ 
     window.alert("Why are my parents always fighting?")
     }
-    function buttonHit2(callbackData){
+this.buttonHit2 = function(callbackData){
       window.alert("Why am I never good enough for my parents?")
       }
-      function buttonHit3(callbackData){
+this.buttonHit3 = function(callbackData){
         window.alert("Why do my parents hate me?")
       }
 
-      function buttonHit4(callbackData){
+this.buttonHit4 = function(callbackData){
         vid1 = createVideo('libraries/audio&video/Abusive parents.webm');
         vid1.size(600, 600);
         vid1.position(350, 100);
@@ -105,7 +105,7 @@ function draw() {
         window.alert("Video is loading, hit 'OK' to continue")
 
       }
-      function buttonHit5(callbackData){
+   this.buttonHit5 = function(callbackData){
         vid2 = createVideo('libraries/audio&video/messed up.webm');
         vid2.size(600, 600);
         vid2.position(350, 100);
@@ -114,24 +114,23 @@ function draw() {
         window.alert("Video is loading, hit 'OK' to continue")
       
       }
-      
-      function buttonHit6(callbackData){
+    this.buttonHit6 = function(callbackData){
         window.alert("Is running away illegal?")
       }
-      function buttonHit7(callbackData){
+      this.buttonHit7 = function(callbackData){
         window.alert("What should I pack if I run away, and where are the best places to hide?")
       }
-      function buttonHit8(callbackData){
+      this.buttonHit8 = function(callbackData){
         window.alert("I don't feel like myself lately, is that normal?")
       }
-      function buttonHit9(callbackData){
+      this.buttonHit9 = function(callbackData){
         window.alert("Why don't I feel happy anymore?")
       }
-      function buttonHit10(callbackData){
+      this.buttonHit10 = function(callbackData){
         window.alert("Am I the problem?")
       }
 
-      function buttonHit11(callbackData){
+      this.buttonHit11 = function(callbackData){
         vid3 = createVideo('libraries/audio&video/emotional self harm.webm');
         vid3.size(600, 600);
         vid3.position(350, 100);
@@ -140,7 +139,7 @@ function draw() {
         window.alert("Video is loading, hit 'OK' to continue")
 
       }
-      function buttonHit12(callbackData){
+      this.buttonHit12 = function(callbackData){
         vid4 = createVideo('libraries/audio&video/Hate yourself.webm');
         vid4.size(600, 600);
         vid4.position(350, 100);
@@ -150,14 +149,14 @@ function draw() {
 
       }
 
-      function buttonHit14(callbackData){
+      this.buttonHit14 = function(callbackData){
       window.alert("How do I stop existing without hurting anyone?")
       }
-      function buttonHit15(callbackData){
+      this.buttonHit15 = function(callbackData){
         window.alert("What is death like?")
       }
       
-      function buttonHit16(callbackData){
+      this.buttonHit16 = function(callbackData){
         vid5 = createVideo('libraries/audio&video/people.webm');
         vid5.size(600, 600);
         vid5.position(350, 100);
@@ -166,13 +165,14 @@ function draw() {
         window.alert("Video is loading, hit 'OK' to continue")
       }
    
-      function buttonHit13(callbackData){
+      this.buttonHit13 = function(callbackData){
         vid5.remove(); }
-      function buttonHit17(callbackData){
+      this.buttonHit17 = function(callbackData){
         vid1.remove();}
-      function buttonHit18(callbackData){
+      this.buttonHit18 = function(callbackData){
         vid2.remove();}
-      function buttonHit19(callbackData){
+      this.buttonHit19 = function(callbackData){
         vid3.remove();}
-      function buttonHit20(callbackData){
+      this.buttonHit20 = function(callbackData){
         vid4.remove();}
+      }
