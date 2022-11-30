@@ -2,11 +2,18 @@
 let img;
 function preload() {
   img = loadImage('libraries/note.png');
+  ring = loadSound('libraries/audio&video/phone-ring.mp3')
+  parents = loadSound('libraries/audio&video/parents.mp3')
 }
 
 function setup() {
   createCanvas(1319, 695)
   image(img, 0, 0);
+  ring.loop();
+  ring.setVolume(0.3);
+  parents.loop();
+  parents.setVolume(0.1);
+  
 }
 
 function draw() {
