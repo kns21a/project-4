@@ -1,6 +1,6 @@
 function computer(){
-let img;
 
+let img;
 let vid1;
 let vid2;
 let vid3;
