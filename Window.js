@@ -1,18 +1,17 @@
-function window(){
 
 let img;
 let wind;
 let parents;
 let ring;
 
-this.preload = function() {
+function preload() {
   img = loadImage('libraries/window.png');
   wind = loadSound('libraries/audio&video/wind.mp3');
   parents = loadSound('libraries/audio&video/parents.mp3');
   ring = loadSound('libraries/audio&video/phone-ring.mp3')
 }
 
-this.setup = function() {
+function setup() {
   createCanvas(1319,695)
   image(img, 0, 0);
   
@@ -24,18 +23,18 @@ this.setup = function() {
   ring.loop()
 }
 
-this.draw = function() {
+function draw() {
   cursor('grab');
   noFill()
   Stroke(255, 0)
   rect(0,450,1319,400); //  button
    }
   
-this.mousePressed = function(){
+function mousePressed(){
     rectButton(4,398,109,79, buttonHit) //run our check for the button below
   }
   
-this.rectButton = function(x,y,w,h, callback){
+function rectButton(x,y,w,h, callback){
     var hit = false;
   
     hit = collidePointRect(mouseX,mouseY,x,y,w,h); //see if the mouse is in the rect
@@ -45,7 +44,6 @@ this.rectButton = function(x,y,w,h, callback){
     }
   }
   
-this.buttonHit = function(callbackData){
+function buttonHit(callbackData){
   this.sceneManager.showScene(bedroom);
     }
-  }
