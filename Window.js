@@ -27,8 +27,8 @@ function setup() {
 function draw() {
   cursor('grab');
   noFill()
-  //Stroke(255, 0)
-  rect(0,450,1319,400); // computer button
+  Stroke(255, 0)
+  rect(0,450,1319,400); //  button
    }
   
    function mousePressed(){

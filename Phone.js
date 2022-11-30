@@ -17,7 +17,7 @@ function setup() {
 function draw() {
   cursor('grab');
   noFill()
-  //Stroke(255, 0)
+  Stroke(255, 0)
   rect(612,632,40,40); // home button on phone
  
    }
