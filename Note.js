@@ -20,7 +20,8 @@ function draw() {
 
   cursor('grab');
   noFill()
- // Stroke(255, 0)
+ 
+  Stroke(255, 0)
   rect(0,0,380,695); // left background button
   rect(930, 0, 380, 695); // right background button
  

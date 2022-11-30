@@ -47,17 +47,17 @@ function rectButton(x,y,w,h, callback){
 }
 
 function buttonHit1(callbackData){
-this.sceneManager.showScene(Computer);
+this.sceneManager.showScene(computer);
 	}
  
   function buttonHit2(callbackData){
-    this.sceneManager.showScene(Note);
+    this.sceneManager.showScene(note);
       }
 
       function buttonHit3(callbackData){
-        this.sceneManager.showScene(Window);
+        this.sceneManager.showScene(window);
           }
 
           function buttonHit4(callbackData){
-            this.sceneManager.showScene(Phone);
+            this.sceneManager.showScene(phone);
               }
