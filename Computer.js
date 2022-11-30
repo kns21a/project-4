@@ -8,11 +8,10 @@ let vid4;
 let vid5;
 
 this.preload = function() {
-  img = loadImage('libraries/computer.png');
+img = loadImage('libraries/computer.png');
 }
 
 this.setup = function() {
-  createCanvas(1319, 695)
   image(img, 0, 0);
   
 }

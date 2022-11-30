@@ -9,7 +9,6 @@ this.preload = function() {
 }
 
 this.setup = function() {
-  createCanvas(1319, 695)
   image(img, 0, 0);
   ring.loop();
   ring.setVolume(0.1);
